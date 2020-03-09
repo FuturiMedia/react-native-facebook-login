@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author       = { "Ryan Sjoquist" => "ryan.sjoquist@gmail.com" }
   s.platforms    = { :ios => "9.0", :tvos => "9.0" }
   s.source       = { :git => package["repository"]["url"], :tag => "#{s.version}" }
-  s.source_files = "RCTFBLogin/*.{h,m}"
+  s.source_files = "RCTFBLogin/*.{h,m}", "FacebookSDK/"
   
   s.dependency "React"
   s.pod_target_xcconfig    = {
